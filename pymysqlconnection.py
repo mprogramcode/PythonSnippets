@@ -15,7 +15,7 @@ def SQLLookupQRData(UserTextInputData):
         cursorObject = conn.cursor()                                     
 
         # SQL query string
-        sqlQuery = "select QRCODE from qrdatatable where id = " + "'" + UserTextInputData + "'"
+        sqlQuery = "select col from qrdatatable where id = " + "'" + UserTextInputData + "'"
 
         # Execute the sqlQuery
         cursorObject.execute(sqlQuery)
